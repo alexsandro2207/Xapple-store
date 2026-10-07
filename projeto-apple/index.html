@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Apple Store com produtos em destaque e uma interface moderna." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Apple Store</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#home" class="logo" aria-label="Apple Store página inicial">Apple Store</a>
+
+      <nav class="main-nav" aria-label="Navegação do site">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container" id="home">
+      <div class="tech-circle" aria-hidden="true">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+
+      <section class="product-showcase" id="produtos" aria-label="Produtos em destaque">
+        <article class="item active">
+          <div class="product-img">
+            <img src="./img/applewatch02.jpeg" alt="Apple Watch em destaque" />
+          </div>
+
+          <div class="product-info">
+            <p class="product-tag">Novo lançamento</p>
+            <h2>Apple Watch</h2>
+            <p class="description">
+              O Apple Watch combina saúde, desempenho e praticidade em um relógio inteligente
+              que se conecta ao seu iPhone com elegância e precisão.
+            </p>
+            <button class="btn" type="button">Saiba Mais</button>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="product-img">
+            <img src="./img/airpods-max01.jpeg" alt="AirPods Max" />
+          </div>
+
+          <div class="product-info">
+            <p class="product-tag">Som Premium</p>
+            <h2>AirPods</h2>
+            <p class="description">
+              Fones sem fio com audio imersivo, cancelamento de ruído avançado e conexão fluida
+              com todos os dispositivos Apple.
+            </p>
+            <button class="btn" type="button">Saiba Mais</button>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="product-img">
+            <img src="./img/vision-pro03.jpeg" alt="Apple Vision Pro" />
+          </div>
+
+          <div class="product-info">
+            <p class="product-tag">Alta Performance</p>
+            <h2>Vision Pro</h2>
+            <p class="description">
+              Uma experiência de realidade mista com visual impressionante, alto nível de
+              imersão e tecnologia pensada para produtividade e entretenimento.
+            </p>
+            <button class="btn" type="button">Saiba Mais</button>
+          </div>
+        </article>
+      </section>
+
+      <div class="controls" aria-label="Controles do carrossel">
+        <button class="arrow-btn" id="prev" type="button" aria-label="Produto anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg>
+        </button>
+        <button class="arrow-btn" id="next" type="button" aria-label="Próximo produto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="indicators" aria-label="Indicadores de produtos">
+        <div class="numbers">01</div>
+        <div class="dots" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
